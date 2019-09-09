@@ -4,9 +4,9 @@
   <groupId>onebox</groupId>
   <artifactId>onebox</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <testSourceDirectory>test</testSourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
