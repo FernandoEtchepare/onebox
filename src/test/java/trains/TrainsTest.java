@@ -10,7 +10,7 @@ import main.java.trains.controller.DistanceController;
 import main.java.trains.controller.LoadingController;
 import main.java.trains.model.Route;
 
-public class StructureTest {
+public class TrainsTest {
 
 	@Test
 	public void testMain() {
