@@ -1,14 +1,11 @@
-/**
- * 
- */
-package trains.view;
+package main.java.trains.view;
 
 import java.util.List;
 import java.util.Scanner;
 
-import trains.controller.DistanceController;
-import trains.controller.LoadingController;
-import trains.model.Route;
+import main.java.trains.controller.DistanceController;
+import main.java.trains.controller.LoadingController;
+import main.java.trains.model.Route;
 
 /**
  * @author Fernando Etchepare
@@ -18,6 +15,9 @@ public class Trains {
 
 	private static Scanner scanner;
 
+	/**
+	 * @return	the distance between a set of input towns
+	 */
 	public static void main(String[] args) {
 		LoadingController loader = new LoadingController();
 		DistanceController calculator = new DistanceController();
@@ -27,11 +27,11 @@ public class Trains {
 		char town;
 		String towns = "";
 		Integer q = 1;
-		System.out.println("Please, type the town #" + q + " and press ENTER (finish town input with *):");
+		System.out.print("Please, type the town #" + q + " and press ENTER (finish town input with *): ");
 		town = Character.toUpperCase(scanner.next().charAt(0));
 		while (town != '*') {
 			while (town != '*' && !validateTown(routes, town)) {
-				System.out.println("Please, type the town #" + q + " and press ENTER (finish town input with *):");
+				System.out.print("Please, type the town #" + q + " and press ENTER (finish town input with *): ");
 				town = Character.toUpperCase(scanner.next().charAt(0));
 			}
 			if (town == '*') {
@@ -39,7 +39,7 @@ public class Trains {
 			}
 			towns += town;
 			q++;
-			System.out.println("Please, type the town #" + q + " and press ENTER (finish town input with *):");
+			System.out.print("Please, type the town #" + q + " and press ENTER (finish town input with *): ");
 			town = Character.toUpperCase(scanner.next().charAt(0));
 		}
 		if (towns.isEmpty()) {
@@ -49,6 +49,13 @@ public class Trains {
 		System.out.format("The distance is %s.", distance);
 	}
 
+	/**
+	 * @param routes list of all the combinations of routes and distances between
+	 *               the towns
+	 * @param arg    char name of town typed by the user
+	 * @return boolean validates if town typed is a letter and it exists in the
+	 *         domain of towns
+	 */
 	private static boolean validateTown(List<Route> routes, char arg) {
 		boolean isLetter = Character.isLetter(arg);
 		boolean isTown = false;
