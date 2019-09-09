@@ -1,4 +1,4 @@
-package trains.model;
+package main.java.trains.model;
 
 public class Route {
 	private char origin;
