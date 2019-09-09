@@ -15,6 +15,9 @@ public class Trains {
 
 	private static Scanner scanner;
 
+	/**
+	 * @return	the distance between a set of input towns
+	 */
 	public static void main(String[] args) {
 		LoadingController loader = new LoadingController();
 		DistanceController calculator = new DistanceController();
@@ -46,6 +49,13 @@ public class Trains {
 		System.out.format("The distance is %s.", distance);
 	}
 
+	/**
+	 * @param routes list of all the combinations of routes and distances between
+	 *               the towns
+	 * @param arg    char name of town typed by the user
+	 * @return boolean validates if town typed is a letter and it exists in the
+	 *         domain of towns
+	 */
 	private static boolean validateTown(List<Route> routes, char arg) {
 		boolean isLetter = Character.isLetter(arg);
 		boolean isTown = false;
