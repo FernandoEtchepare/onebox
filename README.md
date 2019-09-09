@@ -4,7 +4,7 @@ Trains exercise is a Java program that calculates de distance between a set of t
 
 ## Requirements
 
-JRE installed in your computer.
+Having JRE and MAVEN installed in your computer.
 
 ## Usage
 
