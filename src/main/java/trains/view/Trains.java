@@ -27,11 +27,11 @@ public class Trains {
 		char town;
 		String towns = "";
 		Integer q = 1;
-		System.out.println("Please, type the town #" + q + " and press ENTER (finish town input with *):");
+		System.out.print("Please, type the town #" + q + " and press ENTER (finish town input with *): ");
 		town = Character.toUpperCase(scanner.next().charAt(0));
 		while (town != '*') {
 			while (town != '*' && !validateTown(routes, town)) {
-				System.out.println("Please, type the town #" + q + " and press ENTER (finish town input with *):");
+				System.out.print("Please, type the town #" + q + " and press ENTER (finish town input with *): ");
 				town = Character.toUpperCase(scanner.next().charAt(0));
 			}
 			if (town == '*') {
@@ -39,7 +39,7 @@ public class Trains {
 			}
 			towns += town;
 			q++;
-			System.out.println("Please, type the town #" + q + " and press ENTER (finish town input with *):");
+			System.out.print("Please, type the town #" + q + " and press ENTER (finish town input with *): ");
 			town = Character.toUpperCase(scanner.next().charAt(0));
 		}
 		if (towns.isEmpty()) {
