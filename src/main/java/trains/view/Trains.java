@@ -56,7 +56,7 @@ public class Trains {
 	 * @return boolean validates if town typed is a letter and it exists in the
 	 *         domain of towns
 	 */
-	private static boolean validateTown(List<Route> routes, char arg) {
+	private static boolean validateTown(final List<Route> routes, final char arg) {
 		boolean isLetter = Character.isLetter(arg);
 		boolean isTown = false;
 		if (!isLetter) {
