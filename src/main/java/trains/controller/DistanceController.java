@@ -1,8 +1,8 @@
-package trains.controller;
+package main.java.trains.controller;
 
 import java.util.List;
 
-import trains.model.Route;
+import main.java.trains.model.Route;
 
 public class DistanceController {
 

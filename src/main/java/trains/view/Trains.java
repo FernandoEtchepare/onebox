@@ -1,14 +1,11 @@
-/**
- * 
- */
-package trains.view;
+package main.java.trains.view;
 
 import java.util.List;
 import java.util.Scanner;
 
-import trains.controller.DistanceController;
-import trains.controller.LoadingController;
-import trains.model.Route;
+import main.java.trains.controller.DistanceController;
+import main.java.trains.controller.LoadingController;
+import main.java.trains.model.Route;
 
 /**
  * @author Fernando Etchepare

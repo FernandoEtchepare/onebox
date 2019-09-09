@@ -1,4 +1,4 @@
-package trains;
+package test.java.trains;
 
 import static org.junit.Assert.assertTrue;
 
@@ -6,9 +6,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import trains.controller.DistanceController;
-import trains.controller.LoadingController;
-import trains.model.Route;
+import main.java.trains.controller.DistanceController;
+import main.java.trains.controller.LoadingController;
+import main.java.trains.model.Route;
 
 public class StructureTest {
 

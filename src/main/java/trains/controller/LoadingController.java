@@ -1,4 +1,4 @@
-package trains.controller;
+package main.java.trains.controller;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 import org.apache.commons.lang3.StringUtils;
 
-import trains.model.Route;
+import main.java.trains.model.Route;
 
 public class LoadingController {
 
